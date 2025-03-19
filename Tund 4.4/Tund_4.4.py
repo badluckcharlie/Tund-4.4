@@ -73,3 +73,39 @@ print("Tere! Sa võid küsida minult jah/ei küsimuse.")
 input("Esita oma küsimus: ")
 response = random.choice(answers)
 print("Minu vastus on:", response)
+
+#11
+
+vowels2 = "aeiouüöõäAEIOUÜÖÕÄ"
+consonants2 = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+
+#14 pealinnad
+
+capitals = ["Tallinn", "Riga","Vilnius", "Helsinki", "Stockholm", "Oslo", "Kopenhagen", "Varsava", "Berlin", "Paris", "Amsterdam", "London", "Milan", "Kiev", "Minsk", "Bratislava"]
+for item in capitals:
+    print(item)
+sorted_capitals = sorted(capitals)
+print("A-x order")
+for item in sorted_capitals:
+    print(item)
+capitals.append(input("Add one more Capital "))
+capitals.append(input("Add one more Capital "))
+sorted_capitals = sorted(capitals)
+print(f"Meie järjendis on {len(sorted_capitals)} pealinnad")
+for capitals1, item in enumerate(sorted_capitals, start=1):
+    print(f"{capitals1}. {item}")
+
+#7 sortereemine
+
+megalist = [random.randint(1, 100), random.randint(1, 100), random.randint(1, 100), random.randint(1, 100), ]
+megalist_sort = sorted(megalist) 
+print("Kasvavalt")
+for item in megalist_sort:
+    print(item)
+print("Kahanevalt")
+megalist_reverse = sorted(megalist, reverse=True)
+for item in megalist_reverse:
+    print(item)
+
+#5 vahetus
+
