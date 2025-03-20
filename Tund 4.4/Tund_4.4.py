@@ -76,8 +76,18 @@ print("Minu vastus on:", response)
 
 #11
 
-vowels2 = "aeiouüöõäAEIOUÜÖÕÄ"
-consonants2 = "bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+vowels2 = "aeiouüöõäAEIOUÜÖÕÄbcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ"
+character_list = []
+multiplied_list = []
+n=10
+for i in range(n):
+    char = vowels2[i]
+    character_list.append(char)
+    multiplied_list.append(char * (i + 1))
+print("Character list:", character_list)
+print("Multiplied list:", multiplied_list)
+
+
 
 #14 pealinnad
 
